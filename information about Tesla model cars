@@ -1,0 +1,29 @@
+import pandas as pd
+
+mydataset = {
+  'Model': ["MOdel S","Model S Plaid", "Model 3","Long Range AWD","Range and performance", "Model X","Model X plaid","Model Y performance","Model Y Long range AWD"],
+  #power in horsepower
+    'Peak Power': [670,1020,0,0,0,670,1020,0,0],
+  #acceleration in second to 100km
+    'Acceleration': [3.1,1.99,5.8,4.2,3.1,3.8,2.5,3.5,4.8],
+   #price in dollars and potential savings
+    'price': [88740,123740,38940,44940,52940,98940,113940,56940,51940],
+   # weight in lbs
+    'weight': [4561,4766,3582,4065,4065,5185,5390,4416,4416],
+    'powertrain': ["Dual Motor","Tri motor","Rear-wheel Drive","Dual motor","Dual motor","Dual motor","Tri motor","Dual motor","Dual motor"],
+    # in kW
+    'supercharging': [250,250,170,250,250,250,250,"pay per use","pay per use"],
+    #top speed in mph
+    'top speed': [155,200,140,145,162,155,163,155,135],
+    #range in miles
+    'range': [405,396,272,358,315,348,333,303,330]
+}
+#myvar = pd.Series(mydataset)
+
+#myvar = pd.DataFrame(mydataset)
+df = pd.DataFrame(mydataset)
+
+
+print(df)
+
+
